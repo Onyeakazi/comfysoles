@@ -1,0 +1,96 @@
+import { Armchair, Check, Footprints, FootprintsIcon, Heart, Info, Menu, Search, ShoppingCart, UserRound} from "lucide-react";
+import { Link, NavLink } from "react-router";
+
+const Navbar = () => {
+    return (
+        <div>
+            {/* Navbar Top */}
+            <div className="navbar_top flex items-center justify-center bg-[#432323] h-[45px] w-full">
+                <div className="lg:container flex items-center justify-between">
+                    <p className="flex items-center gap-2 text-sm font-inter font-normal text-white capitalize"><Check/> Free on all Orders #500</p>
+
+                    <div className="navbar_top_right flex items-center gap-6">
+                        <select defaultValue="Server location" className="bg-none h-[30px] w-[70px] text-sm font-inter font-normal capitalize text-white">
+                            <option>eng</option>
+                            <option>Igbo</option>
+                        </select>
+
+                        <button><Link className="text-sm text-white font-inter font-normal capitalize">FAQ</Link></button>
+                        <button><Link className="flex items-center text-sm text-white font-inter font-normal capitalize gap-1"><Info/>Need Help</Link></button>
+                    </div>
+
+                </div>
+            </div>
+
+            {/* Navbar Middle */}
+            <div className="navbar_middle flex items-center justify-center bg-[#f0f2f3] w-full h-[84px]">
+                <div className="lg:container grid grid-cols-3 items-center relative">
+
+                    <div className="logo_wrapper">
+                        <Link to='/' className="text-3xl text-black font-inter font-medium capitalize flex items-center gap-3"><Footprints size="32px" color="orangered"/>ComfySoles</Link>
+                    </div>
+
+                    <div className="search_box">
+                        <form action="#" className="max-w-[443px] h-[44px] relative">
+                            <input type="text" placeholder="Search here..." className="max-w-[443px] w-full h-full bg-white rounded-lg pl-4"/>
+
+                            <button className="absolute top-50% right-4 translate-y-1/2"><Search size='22px' color="#272343"/></button>
+                        </form>
+                    </div>
+
+                    {/* Navbar middle right */}
+                    <div className="navbar_middle_right flex items-center gap-4 absolute right-1">
+                       
+                        <button className="btn capitalize">
+                            <ShoppingCart /> Cart <div className="badge badge-sm bg-amber-400">2</div>
+                        </button>
+
+                        <button className="btn capitalize">
+                            <Heart />
+                        </button>
+
+                        <div className="dropdown">
+                            <div tabIndex={0} role="button" className="btn m-1"><UserRound /></div>
+                            <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box z-1 w-25 ">
+                                <li><a><Link>Account</Link></a></li>
+                                <li><a><Link>Logout</Link></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Navbar bottom */}
+            <div className="navbar_bottom flex items-center justify-center w-full h-[75px] bg-white border-b-[1px] border-[#e1e1e5]">
+                <div className="lg:container flex items-center justify-between">
+                    
+                    <div className="navbar_bottom_left flex items-center gap-4">
+                        <div className="dropdown dropdown-start">
+                            <div tabIndex={0} role="button" className="btn m-1 flex items-center gap-5 capitalize"><Menu /> all categories</div>
+                            <ul tabIndex={0} className="dropdown-content menu p-2 shadow bg-base-100 rounded-box z-1 w-37 ">
+                                <li><a><Link>Men's Shoes</Link></a></li>
+                                <li><a><Link>Women's Shoes</Link></a></li>
+                                <li><a><Link>Kid's Shoes</Link></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="flex gap-5">
+                        <nav className="flex items-center gap-8">
+                            <NavLink to='/' className="text-sm text-amber-600 font-inter font-medium captilize">Home</NavLink>
+                            <NavLink className="text-sm text-[#636270] font-inter font-medium captilize">About</NavLink>
+                            <NavLink className="text-sm text-[#636270] font-inter font-medium captilize">Product</NavLink>
+                            <NavLink className="text-sm text-[#636270] font-inter font-medium captilize">Shop</NavLink>
+                            <NavLink className="text-sm text-[#636270] font-inter font-medium captilize">Pages</NavLink>
+                        </nav>
+                        <div className="navbar_bottom_right">
+                            <p className="text-sm text-gray-400 font-inter font-normal captilize">Contact: <span className="text-gray-400">(+234) 810-4149-178</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default Navbar;
