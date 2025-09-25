@@ -2,29 +2,32 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import { ShoppingCart } from "lucide-react";
+import cat1 from "../../assets/categories/cat1.jpg";
+import cat2 from "../../assets/categories/cat2.jpg";
+import cat3 from "../../assets/categories/cat3.jpg";
+import cat4 from "../..//assets/categories/cat4.jpg"
 
 const Categories = () => {
     const categories = [
         {
             title: "Casual Shoes",
             products: "200 Products",
-            image: "src/assets/categories/cat1.jpg",
+            image: cat1
         },
         {
             title: "Work Shoes",
             products: "150 Products",
-            image: "src/assets/categories/cat2.jpg",
+            image: cat2
         },
         {
             title: "Adventure Shoes",
             products: "100 Products",
-            image: "src/assets/categories/cat3.jpg",
+            image: cat3
         },
         {
             title: "Sports Shoes",
             products: "300 Products",
-            image: "src/assets/categories/cat4.jpg",
+            image: cat4
         },
     ];
 

@@ -1,6 +1,30 @@
 import { useState } from "react";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import { ShoppingCart } from "lucide-react";
+import trend1 from "../../assets/products/trending_1.jpg";
+import trend2 from "../../assets/products/trending_2.jpg";
+import trend3 from "../../assets/products/trending_3.jpg";
+import trend4 from "../../assets/products/trending_4.jpg";
+import trend5 from "../../assets/products/trending_5.jpg";
+import trend6 from "../../assets/products/trending_6.jpg";
+import trend7 from "../../assets/products/trending_7.jpg";
+import trend8 from "../../assets/products/trending_8.jpg";
+import newest1 from "../../assets/products/newest_1.jpg";
+import newest2 from "../../assets/products/newest_2.jpg";
+import newest3 from "../../assets/products/newest_3.jpg";
+import newest4 from "../../assets/products/newest_4.jpg";
+import newest5 from "../../assets/products/newest_5.jpg";
+import newest6 from "../../assets/products/newest_6.jpg";
+import newest7 from "../../assets/products/newest_7.jpg";
+import newest8 from "../../assets/products/newest_8.jpg";
+import best1 from "../../assets/products/best_1.jpg";
+import best2 from "../../assets/products/best_2.jpg";
+import best3 from "../../assets/products/best_3.jpg";
+import best4 from "../../assets/products/best_4.jpg";
+import best5 from "../../assets/products/best_5.jpg";
+import best6 from "../../assets/products/best_6.jpg";
+import best7 from "../../assets/products/best_7.jpg";
+import best8 from "../../assets/products/best_8.jpg";
 
 const Product = () => {
     const [active, setActive] = useState({
@@ -36,7 +60,7 @@ const Product = () => {
             title: "Nike Shoes",
             status: "New",
             price: "#130,000",
-            image: "src/assets/products/trending_4.jpg",
+            image: trend4,
             currentPrice: "#125,000",
             product: "all"
         },
@@ -44,7 +68,7 @@ const Product = () => {
             title: "Nike Shoes",
             status: "New",
             price: "#200,000",
-            image: "src/assets/products/trending_5.jpg",
+            image: trend5,
             currentPrice: "#190,000",
             product: "all"
         },
@@ -52,7 +76,7 @@ const Product = () => {
             title: "Adidas Shoes",
             status: "New",
             price: "#130,000",
-            image: "src/assets/products/newest_4.jpg",
+            image: trend4,
             currentPrice: "#125,000",
             product: "all"
         },
@@ -60,7 +84,7 @@ const Product = () => {
             title: "Adidas Shoes",
             status: "New",
             price: "#200,000",
-            image: "src/assets/products/newest_5.jpg",
+            image: trend5,
             currentPrice: "#190,000",
             product: "all"
         },
@@ -68,7 +92,7 @@ const Product = () => {
             title: "Best Sellers",
             status: "New",
             price: "#130,000",
-            image: "src/assets/products/best_4.jpg",
+            image: best4,
             currentPrice: "#125,000",
             product: "all"
         },
@@ -76,27 +100,27 @@ const Product = () => {
             title: "Best Sellers",
             status: "New",
             price: "#200,000",
-            image: "src/assets/products/best_5.jpg",
+            image: best5,
             currentPrice: "#190,000",
             product: "all"
         },
         {
             title: "Nike Shoes",
             price: "#80,000",
-            image: "src/assets/products/trending_3.jpg",
+            image: trend3,
             product: "all"
         },
         {
             title: "Best Sellers2",
             price: "#80,000",
-            image: "src/assets/products/best_7.jpg",
+            image: best7,
             product: "all"
         },
         {
             title: "Nike Shoes",
             status: "New",
             price: "#120,000",
-            image: "src/assets/products/trending_1.jpg",
+            image: trend1,
             currentPrice: "#100,000",
             product: "trending"
         },
@@ -104,20 +128,20 @@ const Product = () => {
             title: "Nike Shoes",
             status: "Sale",
             price: "#150,000",
-            image: "src/assets/products/trending_2.jpg",
+            image: trend2,
             product: "trending"
         },
         {
             title: "Nike Shoes",
             price: "#80,000",
-            image: "src/assets/products/trending_3.jpg",
+            image: trend3,
             product: "trending"
         },
         {
             title: "Nike Shoes",
             status: "New",
             price: "#130,000",
-            image: "src/assets/products/trending_4.jpg",
+            image: trend4,
             currentPrice: "#125,000",
             product: "trending"
         },
@@ -125,7 +149,7 @@ const Product = () => {
             title: "Nike Shoes",
             status: "New",
             price: "#200,000",
-            image: "src/assets/products/trending_5.jpg",
+            image: trend5,
             currentPrice: "#190,000",
             product: "trending"
         },
@@ -133,20 +157,20 @@ const Product = () => {
             title: "Nike Shoes",
             status: "Sale",
             price: "#100,000",
-            image: "src/assets/products/trending_6.jpg",
+            image: trend6,
             product: "trending"
         },
         {
             title: "Nike Shoes2",
             price: "#80,000",
-            image: "src/assets/products/trending_7.jpg",
+            image: trend7,
             product: "trending"
         },
         {
             title: "Nike Shoes",
             status: "New",
             price: "#70,000",
-            image: "src/assets/products/trending_8.jpg",
+            image: trend8,
             currentPrice: "#68,000",
             product: "trending"
         },
@@ -154,7 +178,7 @@ const Product = () => {
             title: "Adidas Shoes",
             status: "New",
             price: "#120,000",
-            image: "src/assets/products/newest_1.jpg",
+            image: newest1,
             currentPrice: "#100,000",
             product: "newest"
         },
@@ -162,20 +186,20 @@ const Product = () => {
             title: "Adidas Shoes",
             status: "Sale",
             price: "#150,000",
-            image: "src/assets/products/newest_2.jpg",
+            image: newest2,
             product: "newest"
         },
         {
             title: "Adidas Shoes",
             price: "#80,000",
-            image: "src/assets/products/newest_3.jpg",
+            image: newest3,
             product: "newest"
         },
         {
             title: "Adidas Shoes",
             status: "New",
             price: "#130,000",
-            image: "src/assets/products/newest_4.jpg",
+            image: newest4,
             currentPrice: "#125,000",
             product: "newest"
         },
@@ -183,7 +207,7 @@ const Product = () => {
             title: "Adidas Shoes",
             status: "New",
             price: "#200,000",
-            image: "src/assets/products/newest_5.jpg",
+            image: newest5,
             currentPrice: "#190,000",
             product: "newest"
         },
@@ -191,20 +215,20 @@ const Product = () => {
             title: "Adidas Shoes",
             status: "Sale",
             price: "#100,000",
-            image: "src/assets/products/newest_6.jpg",
+            image: newest6,
             product: "newest"
         },
         {
             title: "Adidas Shoes2",
             price: "#80,000",
-            image: "src/assets/products/newest_7.jpg",
+            image: newest7,
             product: "newest"
         },
         {
             title: "Adidas Shoes",
             status: "New",
             price: "#70,000",
-            image: "src/assets/products/newest_8.jpg",
+            image: newest8,
             currentPrice: "#68,000",
             product: "newest"
         },
@@ -212,7 +236,7 @@ const Product = () => {
             title: "Best Sellers",
             status: "New",
             price: "#120,000",
-            image: "src/assets/products/best_1.jpg",
+            image: best1,
             currentPrice: "#100,000",
             product: "best_seller"
         },
@@ -220,20 +244,20 @@ const Product = () => {
             title: "Best Sellers",
             status: "Sale",
             price: "#150,000",
-            image: "src/assets/products/best_2.jpg",
+            image: best2,
             product: "best_seller"
         },
         {
             title: "Best Sellers",
             price: "#80,000",
-            image: "src/assets/products/best_3.jpg",
+            image: best3,
             product: "best_seller"
         },
         {
             title: "Best Sellers",
             status: "New",
             price: "#130,000",
-            image: "src/assets/products/best_4.jpg",
+            image: best4,
             currentPrice: "#125,000",
             product: "best_seller"
         },
@@ -241,7 +265,7 @@ const Product = () => {
             title: "Best Sellers",
             status: "New",
             price: "#200,000",
-            image: "src/assets/products/best_5.jpg",
+            image: best5,
             currentPrice: "#190,000",
             product: "best_seller"
         },
@@ -249,20 +273,20 @@ const Product = () => {
             title: "Best Sellers",
             status: "Sale",
             price: "#100,000",
-            image: "src/assets/products/best_6.jpg",
+            image: best6,
             product: "best_seller"
         },
         {
             title: "Best Sellers2",
             price: "#80,000",
-            image: "src/assets/products/best_7.jpg",
+            image: best7,
             product: "best_seller"
         },
         {
             title: "Best Sellers",
             status: "New",
             price: "#70,000",
-            image: "src/assets/products/best_8.jpg",
+            image: best8,
             currentPrice: "#68,000",
             product: "best_seller"
         },

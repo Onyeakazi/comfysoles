@@ -1,34 +1,41 @@
+import adidas from "../../assets/brands/adidas.jpg";
+import fila from "../../assets/brands/fila.jpg";
+import nike from "../../assets/brands/nike.jpg";
+import lakers from "../../assets/brands/lakers.jpg";
+import NB from "../../assets/brands/NB.png";
+import reebok from "../../assets/brands/reebok.jpg";
+import nba from "../../assets/brands/nba.png"
 
 const Brand = () => {
 
     const brand = [
         {
             id: "1",
-            image: "src/assets/brands/adidas.jpg"
+            image: adidas
         },
         {
             id: "2",
-            image: "src/assets/brands/fila.jpg"
+            image: fila
         },
         {
             id: "3",
-            image: "src/assets/brands/nike.jpg"
+            image: nike
         },
         {
             id: "4",
-            image: "src/assets/brands/lakers.jpg"
+            image: lakers
         },
         {
             id: "5",
-            image: "src/assets/brands/NB.png"
+            image: NB
         },
         {
             id: "6",
-            image: "src/assets/brands/reebok.jpg"
+            image: reebok
         },
         {
             id: "7",
-            image: "src/assets/brands/nba.png"
+            image: nba
         }
     ]
 

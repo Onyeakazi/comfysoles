@@ -2,6 +2,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { MoveRight } from "lucide-react";
+import shoe1 from "../../assets/images/shoe1.png";
+import shoe2 from "../../assets/images/shoe2.png";
+import shoe3 from "../../assets/images/shoe3.png";
+import shoe4 from "../../assets/images/shoe4.png";
 
 const Banner = () => {
 
@@ -10,25 +14,25 @@ const Banner = () => {
             id: 1,
             title: "Best Selling Shoes",
             description: "Discover our best-selling shoes that combine style and comfort.",
-            image: "src/assets/images/shoe1.png"
+            image: shoe1
         },
         {
             id: 2,
             title: "New Arrivals",
             description: "Check out our latest collection of shoes that are sure to turn heads.",
-            image: "src/assets/images/shoe2.png"
+            image: shoe2 
         },
         {
             id: 3,
             title: "Summer Collection",
             description: "Step into summer with our stylish and breathable footwear.",
-            image: "src/assets/images/shoe3.png"
+            image: shoe3
         },
         {
             id: 4,
             title: "Winter Specials",
             description: "Stay warm and stylish this winter with our exclusive range of boots and insulated shoes.",
-            image: "src/assets/images/shoe4.png"
+            image: shoe4
         }
     ]
 

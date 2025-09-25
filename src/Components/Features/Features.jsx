@@ -3,6 +3,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { ShoppingCart } from "lucide-react";
+import product1 from "../../assets/features/product1.jpg";
+import product2 from "../../assets/features/product_2.jpg";
+import product3 from "../../assets/features/product_3.jpg";
+import product4 from "../../assets/features/product_4.jpg";
 
 const Features = () => {
     const features = [
@@ -10,25 +14,25 @@ const Features = () => {
             title: "Jordan Shoes",
             status: "New",
             price: "#20,000",
-            image: "src/assets/features/product1.jpg",
+            image: product1,
             currentPrice: "#15,000"
         },
         {
             title: "Airwalk Shoes",
             status: "Sale",
             price: "#30,000",
-            image: "src/assets/features/product_2.jpg",
+            image: product2,
         },
         {
             title: "Nike Shoes",
             price: "#20,000",
-            image: "src/assets/features/product_3.jpg",
+            image: product3,
         },
         {
             title: "Jordan Shoes",
             status: "New",
             price: "#30,000",
-            image: "src/assets/features/product_4.jpg",
+            image: product4,
             currentPrice: "#25,000"
         },
     ];
